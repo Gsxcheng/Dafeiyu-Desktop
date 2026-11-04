@@ -1,0 +1,32 @@
+# 秘密与本地配置
+.env
+.env.*
+!.env.example
+*token*
+*cookie*
+*.pem
+*.key
+secrets/
+credentials/
+config.local.*
+
+# 运行时数据/会话
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.db
+*.sqlite*
+logs/
+state/
+sessions/
+QQData/
+
+# 平台/IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+dist/
+build/
