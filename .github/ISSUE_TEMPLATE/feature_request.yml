@@ -1,0 +1,39 @@
+name: 功能需求
+description: 为 Dafeiyu-Desktop 提交功能建议
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 用户场景
+      description: 谁在什么平台上需要做什么？
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为和验收方式
+      description: 什么证据说明这项功能真正可用？
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: 功能所属模块
+      options:
+        - 人格与广场
+        - 聊天与渠道
+        - 记忆
+        - 提醒与待办
+        - 插件与 MCP
+        - Desktop/Web/App
+        - 权限与安全
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: 风险与依赖
+      description: 涉及第三方接口、用户数据、权限或版权吗？请勿贴敏感数据。
